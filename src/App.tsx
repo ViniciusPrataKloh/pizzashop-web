@@ -1,11 +1,12 @@
-import { BrowserRouter } from 'react-router-dom';
-import './global.css';
-import { Router } from './Router';
+import './global.css'
 
+import { BrowserRouter } from 'react-router-dom'
+
+import { Router } from './Router'
 
 function App() {
   return (
-    <div className='flex h-screen items-center justify-center bg-gray-500'>
+    <div className="flex h-screen items-center justify-center bg-gray-500 ">
       <BrowserRouter>
         <Router />
       </BrowserRouter>
