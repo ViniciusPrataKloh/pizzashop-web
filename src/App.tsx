@@ -7,9 +7,9 @@ import { Router } from './Router'
 
 function App() {
   return (
-    <div className="flex h-screen items-center justify-center bg-gray-500 ">
+    <div className="">
       <HelmetProvider>
-        <Helmet titleTemplate="%s | pizza-shop" />
+        <Helmet titleTemplate="%s | pizza.shop" />
 
         <BrowserRouter>
           <Router />
