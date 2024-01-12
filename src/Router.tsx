@@ -1,8 +1,11 @@
+import { Route, Routes } from 'react-router-dom'
+
 import SignIn from '@/pages/auth/SignIn'
 import Dashboard from '@/pages/home/Dashboard'
-import { Route, Routes } from 'react-router-dom'
-import { DashboardLayout } from './pages/layouts/DashboardLayout'
+
+import SignUp from './pages/auth/SignUp'
 import { AuthLayout } from './pages/layouts/AuthLayout'
+import { DashboardLayout } from './pages/layouts/DashboardLayout'
 
 export function Router() {
   return (
@@ -11,8 +14,9 @@ export function Router() {
         <Route path="" element={<Dashboard />} />
       </Route>
 
-      <Route path="/sign-in" element={<AuthLayout />}>
-        <Route path="" element={<SignIn />} />
+      <Route path="/auth/" element={<AuthLayout />}>
+        <Route path="sign-in" element={<SignIn />} />
+        <Route path="sign-up" element={<SignUp />} />
       </Route>
     </Routes>
   )
