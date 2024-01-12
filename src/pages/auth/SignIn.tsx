@@ -40,7 +40,7 @@ export default function SignIn() {
       <Helmet title="Sign-In" />
 
       <div className="p-8">
-        <Button className="absolute right-8 top-8" asChild>
+        <Button className="absolute right-8 top-8" asChild variant={'ghost'}>
           <Link to="/auth/sign-up">Novo cadastro</Link>
         </Button>
 

@@ -51,7 +51,7 @@ export default function SignUp() {
       <Helmet title="Cadastro" />
 
       <div className="p-8">
-        <Button className="absolute right-8 top-8" asChild>
+        <Button className="absolute right-8 top-8" asChild variant={'ghost'}>
           <Link to="/auth/sign-in">Acessar painel</Link>
         </Button>
 
