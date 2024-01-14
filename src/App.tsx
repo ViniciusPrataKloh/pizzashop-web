@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="">
       <HelmetProvider>
-        <ThemeProvider defaultTheme="dark" storageKey="pizzashop-ui-theme">
+        <ThemeProvider defaultTheme="system" storageKey="pizzashop-ui-theme">
           <Helmet titleTemplate="%s | pizza.shop" />
           <Toaster richColors />
 
