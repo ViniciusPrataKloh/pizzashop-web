@@ -1,5 +1,6 @@
 import { Home, Moon, Pizza, SunMedium, UtensilsCrossed } from 'lucide-react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import { useTheme } from '../theme/ThemeProvider'
 import { Separator } from '../ui/separator'
@@ -23,7 +24,9 @@ export function Header() {
   return (
     <div className="border-b">
       <div className="item-center flex h-16 gap-6 px-6 py-5">
-        <Pizza className="h-6 w-6" />
+        <Link to="/">
+          <Pizza className="h-6 w-6" />
+        </Link>
 
         <Separator orientation="vertical" className="h-6" />
 
